@@ -38,3 +38,23 @@ WriteLine(format: "Klucz {0} ma wartosc : {1}",
     arg0: klucz,
     arg1: slownikIntString[klucz]);
 
+//interfejsy
+
+Osoba?[] osoby =
+{
+    null,
+    new Osoba {Nazwisko = "Saniak"},
+    new Osoba {Nazwisko = "Janiak"},
+    new Osoba {Nazwisko = "Adun"},
+    new Osoba {Nazwisko = null},
+    new Osoba {Nazwisko = "Rykszak"}
+};
+
+WypiszNazwiska(osoby, "Poczatkowa lista osob:");
+
+Array.Sort(osoby);
+
+WypiszNazwiska(osoby, "Do posortowania użyto zaimplementowanego interfejsu IComparable:");
+
+
+
